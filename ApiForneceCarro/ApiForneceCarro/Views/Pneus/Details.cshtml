@@ -1,0 +1,42 @@
+﻿@model ApiForneceCarro.Models.Pneu
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Pneu</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Carro.Marca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carro.Marca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Marca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Marca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Aro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aro)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PneuId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
